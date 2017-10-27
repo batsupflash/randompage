@@ -20,6 +20,7 @@ function addFields(){
                 container.appendChild(input);
                 // Append a line break
                 container.appendChild(document.createElement("br"));
+                list_of_choices = [];
             }
         }
 
@@ -27,9 +28,7 @@ function random(){
   var number = document.getElementById("choice").value;
   for (var i = 0; i < number; i++) {
     var choice = document.getElementById("choice"+i).value;
-    list_of_choices.push(choice);
-  }
+    list_of_choices.push(choice);}
   var result = list_of_choices[Math.floor(Math.random() * list_of_choices.length)];
   alert ("Kết quả là: "+result);
-  list_of_choices.splice(0,list_of_choices.length);
 }
