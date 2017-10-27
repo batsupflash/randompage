@@ -31,4 +31,5 @@ function random(){
   }
   var result = list_of_choices[Math.floor(Math.random() * list_of_choices.length)];
   alert ("Kết quả là: "+result);
+  list_of_choices.splice(0,list_of_choices.length);
 }
